@@ -25,7 +25,7 @@ Implement RumpDelegate methods to receive notification about response from Rump 
 Use Rump:
 
 ```objective-c
-CLLocation2DCoordinate loc = ...
+CLLocationCoordinate2D loc = ...
 Rump* rump = [[Rump alloc]init];
 [rump rumpInLocation:loc user:@"username" nickname:@"nickname" delegate:self];
 ```

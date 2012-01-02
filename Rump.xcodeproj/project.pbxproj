@@ -10,7 +10,6 @@
 		B9D6020F14B1D10C002E5C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6020E14B1D10C002E5C9C /* Foundation.framework */; };
 		B9D6021514B1D10C002E5C9C /* Rump.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D6021414B1D10C002E5C9C /* Rump.m */; };
 		B9D6021D14B1D10C002E5C9C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6021C14B1D10C002E5C9C /* SenTestingKit.framework */; };
-		B9D6021F14B1D10C002E5C9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6021E14B1D10C002E5C9C /* UIKit.framework */; };
 		B9D6022014B1D10C002E5C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6020E14B1D10C002E5C9C /* Foundation.framework */; };
 		B9D6022314B1D10C002E5C9C /* libRump.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6020B14B1D10C002E5C9C /* libRump.a */; };
 		B9D6022914B1D10C002E5C9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D6022714B1D10C002E5C9C /* InfoPlist.strings */; };
@@ -35,7 +34,6 @@
 		B9D6021414B1D10C002E5C9C /* Rump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rump.m; sourceTree = "<group>"; };
 		B9D6021B14B1D10C002E5C9C /* RumpTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumpTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D6021C14B1D10C002E5C9C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B9D6021E14B1D10C002E5C9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B9D6022614B1D10C002E5C9C /* RumpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RumpTests-Info.plist"; sourceTree = "<group>"; };
 		B9D6022814B1D10C002E5C9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9D6022A14B1D10C002E5C9C /* RumpTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RumpTests.h; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D6021D14B1D10C002E5C9C /* SenTestingKit.framework in Frameworks */,
-				B9D6021F14B1D10C002E5C9C /* UIKit.framework in Frameworks */,
 				B9D6022014B1D10C002E5C9C /* Foundation.framework in Frameworks */,
 				B9D6022314B1D10C002E5C9C /* libRump.a in Frameworks */,
 			);
@@ -89,7 +86,6 @@
 			children = (
 				B9D6020E14B1D10C002E5C9C /* Foundation.framework */,
 				B9D6021C14B1D10C002E5C9C /* SenTestingKit.framework */,
-				B9D6021E14B1D10C002E5C9C /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -388,6 +384,7 @@
 				B9D6023114B1D10C002E5C9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9D6023214B1D10C002E5C9C /* Build configuration list for PBXNativeTarget "RumpTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +393,7 @@
 				B9D6023414B1D10C002E5C9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
