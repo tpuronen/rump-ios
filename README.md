@@ -7,6 +7,7 @@ Using Rump-iOS
 ==============
 
 Implement RumpDelegate methods to receive notification about response from Rump server.
+
 ```objective-c
 -(void)connectedWith:(NSSet*)others {
   ...
@@ -22,8 +23,10 @@ Implement RumpDelegate methods to receive notification about response from Rump 
 ```
 
 Use Rump:
+
 ```objective-c
 CLLocation2DCoordinate loc = ...
 Rump* rump = [[Rump alloc]init];
 [rump rumpInLocation:loc user:@"username" nickname:@"nickname" delegate:self];
 ```
+
