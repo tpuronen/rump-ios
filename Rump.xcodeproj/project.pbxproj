@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9D6020F14B1D10C002E5C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6020E14B1D10C002E5C9C /* Foundation.framework */; };
+		B9D6021514B1D10C002E5C9C /* Rump.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D6021414B1D10C002E5C9C /* Rump.m */; };
+		B9D6021D14B1D10C002E5C9C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6021C14B1D10C002E5C9C /* SenTestingKit.framework */; };
+		B9D6021F14B1D10C002E5C9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6021E14B1D10C002E5C9C /* UIKit.framework */; };
+		B9D6022014B1D10C002E5C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6020E14B1D10C002E5C9C /* Foundation.framework */; };
+		B9D6022314B1D10C002E5C9C /* libRump.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6020B14B1D10C002E5C9C /* libRump.a */; };
+		B9D6022914B1D10C002E5C9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D6022714B1D10C002E5C9C /* InfoPlist.strings */; };
+		B9D6022C14B1D10C002E5C9C /* RumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D6022B14B1D10C002E5C9C /* RumpTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9D6022114B1D10C002E5C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D6020214B1D10C002E5C9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9D6020A14B1D10C002E5C9C;
+			remoteInfo = Rump;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9D6020B14B1D10C002E5C9C /* libRump.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRump.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D6020E14B1D10C002E5C9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9D6021214B1D10C002E5C9C /* Rump-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rump-Prefix.pch"; sourceTree = "<group>"; };
+		B9D6021314B1D10C002E5C9C /* Rump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rump.h; sourceTree = "<group>"; };
+		B9D6021414B1D10C002E5C9C /* Rump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rump.m; sourceTree = "<group>"; };
+		B9D6021B14B1D10C002E5C9C /* RumpTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumpTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D6021C14B1D10C002E5C9C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9D6021E14B1D10C002E5C9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9D6022614B1D10C002E5C9C /* RumpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RumpTests-Info.plist"; sourceTree = "<group>"; };
+		B9D6022814B1D10C002E5C9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9D6022A14B1D10C002E5C9C /* RumpTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RumpTests.h; sourceTree = "<group>"; };
+		B9D6022B14B1D10C002E5C9C /* RumpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RumpTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9D6020814B1D10C002E5C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D6020F14B1D10C002E5C9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D6021714B1D10C002E5C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D6021D14B1D10C002E5C9C /* SenTestingKit.framework in Frameworks */,
+				B9D6021F14B1D10C002E5C9C /* UIKit.framework in Frameworks */,
+				B9D6022014B1D10C002E5C9C /* Foundation.framework in Frameworks */,
+				B9D6022314B1D10C002E5C9C /* libRump.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9D6020014B1D10C002E5C9C = {
+			isa = PBXGroup;
+			children = (
+				B9D6021014B1D10C002E5C9C /* Rump */,
+				B9D6022414B1D10C002E5C9C /* RumpTests */,
+				B9D6020D14B1D10C002E5C9C /* Frameworks */,
+				B9D6020C14B1D10C002E5C9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9D6020C14B1D10C002E5C9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9D6020B14B1D10C002E5C9C /* libRump.a */,
+				B9D6021B14B1D10C002E5C9C /* RumpTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9D6020D14B1D10C002E5C9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D6020E14B1D10C002E5C9C /* Foundation.framework */,
+				B9D6021C14B1D10C002E5C9C /* SenTestingKit.framework */,
+				B9D6021E14B1D10C002E5C9C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9D6021014B1D10C002E5C9C /* Rump */ = {
+			isa = PBXGroup;
+			children = (
+				B9D6021314B1D10C002E5C9C /* Rump.h */,
+				B9D6021414B1D10C002E5C9C /* Rump.m */,
+				B9D6021114B1D10C002E5C9C /* Supporting Files */,
+			);
+			path = Rump;
+			sourceTree = "<group>";
+		};
+		B9D6021114B1D10C002E5C9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9D6021214B1D10C002E5C9C /* Rump-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9D6022414B1D10C002E5C9C /* RumpTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9D6022A14B1D10C002E5C9C /* RumpTests.h */,
+				B9D6022B14B1D10C002E5C9C /* RumpTests.m */,
+				B9D6022514B1D10C002E5C9C /* Supporting Files */,
+			);
+			path = RumpTests;
+			sourceTree = "<group>";
+		};
+		B9D6022514B1D10C002E5C9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9D6022614B1D10C002E5C9C /* RumpTests-Info.plist */,
+				B9D6022714B1D10C002E5C9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B9D6020914B1D10C002E5C9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B9D6020A14B1D10C002E5C9C /* Rump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D6022F14B1D10C002E5C9C /* Build configuration list for PBXNativeTarget "Rump" */;
+			buildPhases = (
+				B9D6020714B1D10C002E5C9C /* Sources */,
+				B9D6020814B1D10C002E5C9C /* Frameworks */,
+				B9D6020914B1D10C002E5C9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rump;
+			productName = Rump;
+			productReference = B9D6020B14B1D10C002E5C9C /* libRump.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B9D6021A14B1D10C002E5C9C /* RumpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D6023214B1D10C002E5C9C /* Build configuration list for PBXNativeTarget "RumpTests" */;
+			buildPhases = (
+				B9D6021614B1D10C002E5C9C /* Sources */,
+				B9D6021714B1D10C002E5C9C /* Frameworks */,
+				B9D6021814B1D10C002E5C9C /* Resources */,
+				B9D6021914B1D10C002E5C9C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D6022214B1D10C002E5C9C /* PBXTargetDependency */,
+			);
+			name = RumpTests;
+			productName = RumpTests;
+			productReference = B9D6021B14B1D10C002E5C9C /* RumpTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9D6020214B1D10C002E5C9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Reaktor;
+			};
+			buildConfigurationList = B9D6020514B1D10C002E5C9C /* Build configuration list for PBXProject "Rump" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9D6020014B1D10C002E5C9C;
+			productRefGroup = B9D6020C14B1D10C002E5C9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9D6020A14B1D10C002E5C9C /* Rump */,
+				B9D6021A14B1D10C002E5C9C /* RumpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9D6021814B1D10C002E5C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D6022914B1D10C002E5C9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9D6021914B1D10C002E5C9C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9D6020714B1D10C002E5C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D6021514B1D10C002E5C9C /* Rump.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D6021614B1D10C002E5C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D6022C14B1D10C002E5C9C /* RumpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9D6022214B1D10C002E5C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9D6020A14B1D10C002E5C9C /* Rump */;
+			targetProxy = B9D6022114B1D10C002E5C9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9D6022714B1D10C002E5C9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D6022814B1D10C002E5C9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9D6022D14B1D10C002E5C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9D6022E14B1D10C002E5C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9D6023014B1D10C002E5C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Rump.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rump/Rump-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B9D6023114B1D10C002E5C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Rump.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rump/Rump-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B9D6023314B1D10C002E5C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rump/Rump-Prefix.pch";
+				INFOPLIST_FILE = "RumpTests/RumpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B9D6023414B1D10C002E5C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rump/Rump-Prefix.pch";
+				INFOPLIST_FILE = "RumpTests/RumpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9D6020514B1D10C002E5C9C /* Build configuration list for PBXProject "Rump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D6022D14B1D10C002E5C9C /* Debug */,
+				B9D6022E14B1D10C002E5C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D6022F14B1D10C002E5C9C /* Build configuration list for PBXNativeTarget "Rump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D6023014B1D10C002E5C9C /* Debug */,
+				B9D6023114B1D10C002E5C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9D6023214B1D10C002E5C9C /* Build configuration list for PBXNativeTarget "RumpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D6023314B1D10C002E5C9C /* Debug */,
+				B9D6023414B1D10C002E5C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9D6020214B1D10C002E5C9C /* Project object */;
+}
