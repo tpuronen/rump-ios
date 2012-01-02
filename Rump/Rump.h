@@ -47,10 +47,16 @@
 @end
 
 @interface Rump : NSObject<NSURLConnectionDataDelegate> {
+    NSURL* _baseUrl;
     id<RumpDelegate> _delegate;
     NSMutableData* _responseData;
     NSString* _myUserId;
 }
+
+/**
+ * Initialize Rump client with give Rump server URL
+ */
+-(id)initWithBaseUrl:(NSURL*)baseUrl;
 
 /**
  * Send Rump request to server. Delegate will be notified of the result

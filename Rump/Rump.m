@@ -10,9 +10,10 @@
 
 @implementation Rump
 
--(id)init {
+-(id)initWithBaseUrl:(NSURL*)baseUrl {
     self = [super init];
     if(self) {
+        _baseUrl = baseUrl;
         _responseData = [[NSMutableData alloc]init];
     }
     return self;
@@ -22,7 +23,7 @@
     _delegate = delegate;
     _myUserId = user;
     NSData* json = [self createRumpRequest:coordinate user:user nickname:nickname];
-    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://rump.demo.reaktor.fi/karma"]];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:_baseUrl];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:json];
 
@@ -72,6 +73,7 @@
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     NSLog(@"fail: %@", error);
+    [_delegate onFailedWithError:error];
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
