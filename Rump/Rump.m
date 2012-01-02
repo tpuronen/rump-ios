@@ -1,12 +1,5 @@
 #import "Rump.h"
 
-@implementation LeaveMsg
-
-@synthesize me = _me;
-@synthesize table = _table;
-
-@end
-
 @implementation RumpUser
 
 @synthesize userId = _userId;

@@ -1,16 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface LeaveMsg : NSObject {
-    NSString* _me;
-    NSString* _table;
-}
-
-@property (nonatomic, retain) NSString* me;
-@property (nonatomic, retain) NSString* table;
-
-@end
-
 @interface RumpUser : NSObject {
     NSString* _userId;
     NSString* _name;
