@@ -26,7 +26,7 @@ Use Rump:
 
 ```objective-c
 CLLocationCoordinate2D loc = ...
-Rump* rump = [[Rump alloc]init];
-[rump rumpInLocation:loc user:@"username" nickname:@"nickname" delegate:self];
+Rump* rump = [[Rump alloc]initWithBaseUrl:[NSURL URLWithString:@"http://rump.domain.com/demo"] user:@"user" nickname:@"John Doe" delegate:self];
+[rump rumpInLocation:loc];
 ```
 
