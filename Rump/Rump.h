@@ -50,21 +50,23 @@
     NSURL* _baseUrl;
     id<RumpDelegate> _delegate;
     NSMutableData* _responseData;
-    NSString* _myUserId;
+    NSString* _userId;
+    NSString* _nickName;
 }
 
 /**
- * Initialize Rump client with give Rump server URL
+ * Initialize Rump client with give Rump server URL and user information
  */
--(id)initWithBaseUrl:(NSURL*)baseUrl;
+-(id)initWithBaseUrl:(NSURL*)baseUrl user:(NSString*)userId nickname:(NSString*)nickname delegate:(id<RumpDelegate>)delegate;
 
 /**
  * Send Rump request to server. Delegate will be notified of the result
  */
--(void)rumpInLocation:(CLLocationCoordinate2D)coordinate user:(NSString*)user nickname:(NSString*)nickname delegate:(id<RumpDelegate>)delegate;
+-(void)rumpInLocation:(CLLocationCoordinate2D)coordinate;
 
 -(NSData*)createRumpRequest:(CLLocationCoordinate2D)coordinate user:(NSString*)user nickname:(NSString*)nickname;
--(NSSet*)parseRumpResponse:(NSData*)response;
+-(void)handleResponse:(NSData*)response;
+-(NSSet*)parseRumpResponse:(NSData*)response error:(NSError**)error;
 -(NSSet*)others:(NSSet*)everybody;
 
 @end

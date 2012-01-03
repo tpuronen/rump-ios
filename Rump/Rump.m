@@ -10,19 +10,20 @@
 
 @implementation Rump
 
--(id)initWithBaseUrl:(NSURL*)baseUrl {
+-(id)initWithBaseUrl:(NSURL*)baseUrl user:(NSString*)userId nickname:(NSString*)nickname delegate:(id<RumpDelegate>)delegate {
     self = [super init];
     if(self) {
         _baseUrl = baseUrl;
         _responseData = [[NSMutableData alloc]init];
+        _userId = userId;
+        _nickName = nickname;
+        _delegate = delegate;
     }
     return self;
 }
 
--(void)rumpInLocation:(CLLocationCoordinate2D)coordinate user:(NSString*)user nickname:(NSString*)nickname delegate:(id<RumpDelegate>)delegate {
-    _delegate = delegate;
-    _myUserId = user;
-    NSData* json = [self createRumpRequest:coordinate user:user nickname:nickname];
+-(void)rumpInLocation:(CLLocationCoordinate2D)coordinate {
+    NSData* json = [self createRumpRequest:coordinate user:_userId nickname:_nickName];
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:_baseUrl];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:json];
@@ -45,11 +46,10 @@
     return result;
 }
 
--(NSSet*)parseRumpResponse:(NSData*)response {
+-(NSSet*)parseRumpResponse:(NSData*)response error:(NSError**)error {
     NSMutableSet* resultSet = [NSMutableSet set];
-    NSError* error;
-    NSArray* result = [NSJSONSerialization JSONObjectWithData:response options:0 error:&error];
-    if (error) {
+    NSArray* result = [NSJSONSerialization JSONObjectWithData:response options:0 error:error];
+    if (!result) {
         return nil;
     }
     for (NSDictionary* dict in result) {
@@ -81,17 +81,26 @@
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSSet* result = [self parseRumpResponse:_responseData];
+    [self handleResponse:_responseData];
+}
+
+-(void)handleResponse:(NSData*)response {
+    NSError* error;
+    NSSet* result = [self parseRumpResponse:response error:&error];
+    if (error) {
+        [_delegate onFailedWithError:error];
+        return;
+    }
     NSSet* others = [self others:result];
-    if ([others count] > 1) {
+    if ([others count] > 0) {
         [_delegate connectedWith:others];        
     } else {
         [_delegate onNoMatch];
-    }    
+    }
 }
 
 -(NSSet*)others:(NSSet*)everybody {
-    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"userId != %@", _myUserId];
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"userId != %@", _userId];
     NSSet* others = [everybody filteredSetUsingPredicate:predicate];
     return others;
 }
