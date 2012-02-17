@@ -182,7 +182,7 @@
 		B9D6020214B1D10C002E5C9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Reaktor;
 			};
 			buildConfigurationList = B9D6020514B1D10C002E5C9C /* Build configuration list for PBXProject "Rump" */;
